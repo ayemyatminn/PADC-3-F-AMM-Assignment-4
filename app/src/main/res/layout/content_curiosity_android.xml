@@ -1,20 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.padcmyanmar.curiosityapplication.CuriosityAndroidActivity"
-    tools:showIn="@layout/activity_curiosity_android">
+    tools:showIn="@layout/activity_curiosity_android"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/im_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="70dp"
+        android:src="@drawable/logo"
+        />
+    <LinearLayout
 
-</android.support.constraint.ConstraintLayout>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="21dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/im_facebook_logo"
+                android:src="@drawable/facebook"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/tv_login_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Sign in With Facebook"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/im_gmail_logo"
+                android:src="@drawable/google"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/tv_login_gmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:paddingLeft="20dp"
+                android:text="Sign in With Gmail"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:layout_margin="10dp">
+            <ImageView
+                android:id="@+id/im_twitter_logo"
+                android:src="@drawable/twitter"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <TextView
+                android:id="@+id/tv_login_twitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:paddingLeft="20dp"
+                android:text="Sign in With Twitter"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/im_email_logo"
+                        android:src="@drawable/email"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp" />
+                    <TextView
+                        android:id="@+id/tv_login_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:text="Sign Up Email"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/im_email_logo1"
+                        android:src="@drawable/email"
+                        android:layout_width="30dp"
+                        android:layout_height="50dp"
+                        />
+                    <TextView
+                        android:id="@+id/tv_login_email1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="20dp"
+                        android:text="Sign In Email"/>
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
