@@ -4,23 +4,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.padcmyanmar.curiosityapplication.CuriosityAndroidActivity">
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+    tools:context="com.padcmyanmar.curiosityapplication.CuriosityAndroidActivity"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/im_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="70dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"
+                />
 
-    </android.support.design.widget.AppBarLayout>
+            <TextView
+                android:id="@+id/btn_login_facebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:layout_margin="16dp"
+                android:text="@string/sign_in_facebook"
+                android:textSize="16dp"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
 
-    <include layout="@layout/content_curiosity_android" />
+
+
+
+
+
 
 
 

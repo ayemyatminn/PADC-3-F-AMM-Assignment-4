@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.padcmyanmar.curiosityapplication.CuriosityAndroidActivity"
     tools:showIn="@layout/activity_curiosity_android"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
 
     <ImageView
         android:id="@+id/im_logo"
